@@ -25,7 +25,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "echo skipping build",
+    "build": "tsup",
     "clean": "node ../../packages/scripts/rm-path-recursive.mjs dist",
     "test": "vitest run --passWithNoTests"
   },
