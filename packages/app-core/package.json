@@ -27,7 +27,7 @@
 	"scripts": {
 		"clean": "node ../scripts/rm-path-recursive.mjs dist",
 		"prepublishOnly": "bun run build:dist",
-		"build": "echo skipping build",
+		"build": "bun run build:dist",
 		"typecheck": "tsgo --noEmit -p tsconfig.json",
 		"test": "node ../scripts/run-vitest.mjs run --config vitest.config.ts",
 		"test:auth": "node ../scripts/run-vitest.mjs run --config vitest.config.ts --no-file-parallelism src/api/auth src/api/auth-bootstrap-routes src/services/auth-store src/cli/program/register.auth",

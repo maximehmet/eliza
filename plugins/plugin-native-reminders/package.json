@@ -36,7 +36,7 @@
     "eventkit"
   ],
   "scripts": {
-    "build": "echo skipping build",
+    "build": "tsc --noCheck -p tsconfig.json",
     "test": "vitest run",
     "clean": "node ../../packages/scripts/rm-path-recursive.mjs dist",
     "prepublishOnly": "bun run build",
