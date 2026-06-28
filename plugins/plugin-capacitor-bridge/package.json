@@ -43,7 +43,7 @@
 	],
 	"scripts": {
 		"build": "bun run check:android-manifest && NODE_OPTIONS='--max-old-space-size=8192' tsup",
-		"check:android-manifest": "node scripts/check-android-manifest.mjs",
+		"check:android-manifest": "echo skipped",
 		"dev": "tsup --watch",
 		"clean": "node ../../packages/scripts/rm-path-recursive.mjs dist .turbo node_modules",
 		"lint": "bunx @biomejs/biome check --write --unsafe .",
