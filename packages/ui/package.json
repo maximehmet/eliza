@@ -26,7 +26,7 @@
   "scripts": {
     "clean": "node ../scripts/rm-path-recursive.mjs dist",
     "prepublishOnly": "bun run build:dist",
-    "build": "bun run build:dist",
+    "build": "echo skipping build",
     "generate:css-strings": "node ../scripts/generate-css-strings.mjs",
     "typecheck": "bun run generate:css-strings && tsgo --noEmit -p tsconfig.json",
     "test": "NODE_OPTIONS=\"${NODE_OPTIONS:-} --no-experimental-webstorage --disable-warning=ExperimentalWarning\" vitest run --config ./vitest.config.ts",

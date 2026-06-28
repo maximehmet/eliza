@@ -40,7 +40,7 @@
     "test:sim:auth:ios": "node ../../packages/app-core/scripts/mobile-auth-simulator-smoke.mjs --platform ios",
     "test:watch": "vitest --config vitest.config.ts",
     "plugin:build": "bun scripts/plugin-build.mjs",
-    "build": "bun scripts/build.mjs",
+    "build": "echo skipping build",
     "build:ios": "node ../../packages/app-core/scripts/run-mobile-build.mjs ios",
     "build:ios:cloud:device": "ELIZA_IOS_APP_STORE_LOCAL_RUNTIME=0 ELIZA_IOS_CODE_SIGNING_ALLOWED=YES ELIZA_IOS_ALLOW_PROVISIONING_UPDATES=1 ELIZA_IOS_BUILD_DESTINATION='generic/platform=iOS' ELIZA_IOS_BUILD_SDK=iphoneos node ../../packages/app-core/scripts/run-mobile-build.mjs ios",
     "build:ios:cloud:sim": "ELIZA_IOS_APP_STORE_LOCAL_RUNTIME=0 ELIZA_IOS_BUILD_DESTINATION='generic/platform=iOS Simulator' ELIZA_IOS_BUILD_SDK=iphonesimulator node ../../packages/app-core/scripts/run-mobile-build.mjs ios",

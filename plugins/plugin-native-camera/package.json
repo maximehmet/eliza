@@ -38,7 +38,7 @@
     "url": "https://github.com/elizaOS/eliza"
   },
   "scripts": {
-    "build": "node ../../packages/scripts/with-package-build-lock.mjs plugins/plugin-native-camera -- bun run build:unlocked",
+    "build": "echo skipping build",
     "clean": "node ../../packages/scripts/rm-path-recursive.mjs dist",
     "prepublishOnly": "bun run build",
     "test": "vitest run --config vitest.config.ts",

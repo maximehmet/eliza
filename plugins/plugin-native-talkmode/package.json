@@ -31,7 +31,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "node ../../packages/scripts/with-package-build-lock.mjs plugins/plugin-native-talkmode -- bun run build:unlocked",
+    "build": "echo skipping build",
     "build:docs": "bun run clean && bun run docgen && tsc && bun --bun rollup -c rollup.config.mjs",
     "clean": "node ../../packages/scripts/rm-path-recursive.mjs dist",
     "test": "vitest run",

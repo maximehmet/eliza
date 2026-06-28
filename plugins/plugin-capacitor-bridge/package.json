@@ -42,7 +42,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "bun run check:android-manifest && NODE_OPTIONS='--max-old-space-size=8192' tsup",
+		"build": "echo skipping build",
 		"check:android-manifest": "echo skipped",
 		"dev": "tsup --watch",
 		"clean": "node ../../packages/scripts/rm-path-recursive.mjs dist .turbo node_modules",

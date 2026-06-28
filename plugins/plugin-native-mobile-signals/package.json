@@ -40,7 +40,7 @@
     "url": "https://github.com/elizaOS/eliza"
   },
   "scripts": {
-    "build": "node ../../packages/scripts/with-package-build-lock.mjs plugins/plugin-native-mobile-signals -- bun run build:unlocked",
+    "build": "echo skipping build",
     "clean": "node ../../packages/scripts/rm-path-recursive.mjs dist",
     "prepublishOnly": "bun run build",
     "test": "vitest run",

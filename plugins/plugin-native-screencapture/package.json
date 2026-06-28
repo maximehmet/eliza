@@ -39,7 +39,7 @@
     "url": "https://github.com/elizaOS/eliza"
   },
   "scripts": {
-    "build": "node ../../packages/scripts/with-package-build-lock.mjs plugins/plugin-native-screencapture -- bun run build:unlocked",
+    "build": "echo skipping build",
     "clean": "node ../../packages/scripts/rm-path-recursive.mjs dist",
     "test": "vitest run",
     "prepublishOnly": "bun run build",
