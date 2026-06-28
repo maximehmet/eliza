@@ -245,11 +245,9 @@
     "packages/app-core/deploy/cloud-agent-template",
     "packages/cloud-services/*",
     "plugins/*",
-    "!plugins/plugin-native-*",
-    "!plugins/plugin-capacitor-*",
-    
-    
-    
+    "packages/native/*",
+    "packages/os/*",
+    "packages/os/android/*",
     "packages/test/cloud-mocks",
     "packages/test/cloud-e2e",
     "packages/feed/packages/*",
